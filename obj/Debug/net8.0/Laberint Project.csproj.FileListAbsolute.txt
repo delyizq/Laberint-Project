@@ -1,0 +1,28 @@
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/bin/Debug/net8.0/Laberint Project
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/bin/Debug/net8.0/Laberint Project.deps.json
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/bin/Debug/net8.0/Laberint Project.runtimeconfig.json
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/bin/Debug/net8.0/Laberint Project.dll
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/bin/Debug/net8.0/Laberint Project.pdb
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.GeneratedMSBuildEditorConfig.editorconfig
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.AssemblyInfoInputs.cache
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.AssemblyInfo.cs
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.csproj.CoreCompileInputs.cache
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.dll
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/refint/Laberint Project.dll
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.pdb
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/Laberint Project.genruntimeconfig.cache
+/home/marlon/University/Computer Science/First Year CS 2024/Proggraming/Laberint Project/obj/Debug/net8.0/ref/Laberint Project.dll
+C:\Lab\Laberint Project\Laberint Project\bin\Debug\net8.0\Laberint Project.exe
+C:\Lab\Laberint Project\Laberint Project\bin\Debug\net8.0\Laberint Project.deps.json
+C:\Lab\Laberint Project\Laberint Project\bin\Debug\net8.0\Laberint Project.runtimeconfig.json
+C:\Lab\Laberint Project\Laberint Project\bin\Debug\net8.0\Laberint Project.dll
+C:\Lab\Laberint Project\Laberint Project\bin\Debug\net8.0\Laberint Project.pdb
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.AssemblyInfoInputs.cache
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.AssemblyInfo.cs
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.csproj.CoreCompileInputs.cache
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.dll
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\refint\Laberint Project.dll
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.pdb
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.genruntimeconfig.cache
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\ref\Laberint Project.dll
