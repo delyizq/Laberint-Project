@@ -26,3 +26,4 @@ C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\refint\Laberint Projec
 C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.pdb
 C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.genruntimeconfig.cache
 C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\ref\Laberint Project.dll
+C:\Lab\Laberint Project\Laberint Project\obj\Debug\net8.0\Laberint Project.sourcelink.json
