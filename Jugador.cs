@@ -105,6 +105,7 @@ public class Jugador
                 }
                 break;
         }
+        Thread.Sleep(1000);
     }
 
     public void UsarHabilidad(Laberinto laberinto)

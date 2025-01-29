@@ -3,9 +3,9 @@ public class Laberinto
     private int[,] mapa;
     private int filas;
     private int columnas;
-    private int PINCHOS = 2; 
-    private int SALUD = 3; 
-    private int TELETRANSPORTE = 4; 
+    private int PINCHOS = 2;
+    private int SALUD = 3;
+    private int TELETRANSPORTE = 4;
 
     public Laberinto(int filas, int columnas)
     {
@@ -80,26 +80,33 @@ public class Laberinto
             for (int j = 0; j < columnas; j++)
             {
                 if (jugador1.Posicion[0] == i && jugador1.Posicion[1] == j)
+                    
                     Console.Write("😃"); // Jugador 1
                 else if (jugador2.Posicion[0] == i && jugador2.Posicion[1] == j)
+                   
                     Console.Write("😠"); // Jugador 2
                 else
                 {
                     switch (mapa[i, j])
                     {
                         case 1:
+                            
                             Console.Write("⬛"); // Pared
                             break;
                         case 0:
+                           
                             Console.Write("🟫"); // Camino
                             break;
                         case 2:
+                            
                             Console.Write("💣"); // Pinchos
                             break;
                         case 3:
+                            
                             Console.Write("🍎"); // Salud
                             break;
                         case 4:
+                            
                             Console.Write("⭐"); // Teletransporte
                             break;
                     }
