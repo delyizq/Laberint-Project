@@ -5,11 +5,11 @@
         int jugadorActual = 1;
         int cont = 0;
         Laberinto laberinto = new Laberinto(17, 17);
-        Jugador jugador1 = new Jugador("Jugador 1", "EscudoProtector") { Posicion = new int[] { 1, 1 }, Vida = 6, PosicionVictoria = new int[] { laberinto.ObtenerMapa().GetLength(0) - 2, laberinto.ObtenerMapa().GetLength(1) - 2 } };
-        Jugador jugador2 = new Jugador("Jugador 2", "DobleMovimiento") { Posicion = new int[] { laberinto.ObtenerMapa().GetLength(0) - 2, laberinto.ObtenerMapa().GetLength(1) - 2 }, Vida = 6, PosicionVictoria = new int[] { 1, 1 } };
+        Jugador jugador1 = new Jugador ("Jugador 1") { Posicion = new int[] { 1, 1 }, Vida = 6, PosicionVictoria = new int[] { laberinto.ObtenerMapa().GetLength(0) - 2, laberinto.ObtenerMapa().GetLength(1) - 2 } };
+        Jugador jugador2 = new Jugador("Jugador 2") { Posicion = new int[] { laberinto.ObtenerMapa().GetLength(0) - 2, laberinto.ObtenerMapa().GetLength(1) - 2 }, Vida = 6, PosicionVictoria = new int[] { 1, 1 } };
 
         laberinto.MostrarMapa(jugador1, jugador2);
-        SeleccionarFichas(jugador1, jugador2);
+        SeleccionarHabilidades(jugador1, jugador2);
         Console.Clear();
         laberinto.MostrarMapa(jugador1, jugador2);
         Console.WriteLine("Jugador 1 usa las teclas W/A/S/D.");
@@ -32,14 +32,14 @@
         }
     }
 
-    private static void SeleccionarFichas(Jugador jugador1, Jugador jugador2)
+    private static void SeleccionarHabilidades(Jugador jugador1, Jugador jugador2)
     {
-        Console.WriteLine("Selecciona una ficha para Jugador 1 (0-4):");
+        Console.WriteLine("Selecciona una habilidad para Jugador 1 (0-4):");
         int seleccion1 = int.Parse(Console.ReadLine());
-        jugador1.SeleccionarFicha(seleccion1);
-        Console.WriteLine("Selecciona una ficha para Jugador 2 (0-4):");
+        jugador1.SeleccionarHabilidad(seleccion1);
+        Console.WriteLine("Selecciona una habilidad para Jugador 2 (0-4):");
         int seleccion2 = int.Parse(Console.ReadLine());
-        jugador2.SeleccionarFicha(seleccion2);
+        jugador2.SeleccionarHabilidad(seleccion2);
     }
 
     private static void ProcesarMovimientoJugador1(ConsoleKeyInfo key, Jugador jugador1, Jugador jugador2, Laberinto laberinto, ref int jugadorActual, ref int cont)
@@ -75,6 +75,7 @@
         else if (key.Key == ConsoleKey.B)
         {
             jugador1.UsarHabilidad(laberinto);
+            laberinto.MostrarMapa(jugador1, jugador2);
         }
     }
 

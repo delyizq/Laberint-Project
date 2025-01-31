@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Laberint Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+609ab7cdbb2781fdb0c5031fa750362c13e52c8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c018685e2bc978693266808114611067de0753de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Laberint Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Laberint Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

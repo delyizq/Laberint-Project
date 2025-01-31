@@ -3,7 +3,7 @@ public class Laberinto
     private int[,] mapa;
     private int filas;
     private int columnas;
-    private int PINCHOS = 2;
+    private int BOMBAS = 2;
     private int SALUD = 3;
     private int TELETRANSPORTE = 4;
 
@@ -14,7 +14,7 @@ public class Laberinto
         mapa = new int[filas, columnas];
         InicializarMapa();
         GenerarLaberinto(1, 1);
-        ColocarTrampas(PINCHOS, 5); // trampas de pinchos
+        ColocarTrampas(BOMBAS, 5); // trampas de BOMBAS
         ColocarTrampas(SALUD, 3); // trampas de salud
         ColocarTrampas(TELETRANSPORTE, 2); // trampas de teletransporte
     }
@@ -99,7 +99,7 @@ public class Laberinto
                             break;
                         case 2:
                             
-                            Console.Write("💣"); // Pinchos
+                            Console.Write("💣"); // BOMBAS
                             break;
                         case 3:
                             

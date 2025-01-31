@@ -2,32 +2,30 @@ public class Jugador
 {
     public string Nombre { get; set; }
     public int Vida { get; set; }
-    public List<string> Fichas { get; private set; }
-    public string FichaSeleccionada { get; set; }
+    public List<string> Habilidades { get; private set; }
     public int[] Posicion { get; set; } // [fila, columna]
     public int[] PosicionVictoria;
     public string Habilidad { get; set; }
     public int Enfriamiento { get; set; }
     public int TurnosDobleMovimiento { get; set; }
     public bool EscudoActivo { get; private set; } // Indica si el escudo está activo
+    public bool AtravesarPared = false;
 
-    public Jugador(string nombre, string habilidad)
+    public Jugador(string nombre)
     {
         Nombre = nombre;
-        Fichas = new List<string> { "Ficha1", "Ficha2", "Ficha3", "Ficha4", "Ficha5" };
-        FichaSeleccionada = "";
-        Habilidad = habilidad;
+        Habilidades = new List<string> { "EscudoProtector", "DobleMovimiento", "", "Habilidad4", "Habilidad5" };
         Enfriamiento = 3; // Enfriamiento reducido a 1 turno
         TurnosDobleMovimiento = 0;
         EscudoActivo = false;
     }
 
-    public void SeleccionarFicha(int indice)
+    public void SeleccionarHabilidad(int indice)
     {
-        if (indice >= 0 && indice < Fichas.Count)
+        if (indice >= 0 && indice < Habilidades.Count)
         {
-            FichaSeleccionada = Fichas[indice];
-            Console.WriteLine($"{Nombre} ha seleccionado {FichaSeleccionada}");
+            Habilidad = Habilidades[indice];
+            Console.WriteLine($"{Nombre} ha seleccionado {Habilidad}");
         }
         else
         {
@@ -53,13 +51,15 @@ public class Jugador
 
         if (nuevaFila >= 0 && nuevaFila < laberinto.ObtenerMapa().GetLength(0) &&
             nuevaColumna >= 0 && nuevaColumna < laberinto.ObtenerMapa().GetLength(1) &&
-            laberinto.ObtenerMapa()[nuevaFila, nuevaColumna] != 1)
+            (AtravesarPared || laberinto.ObtenerMapa()[nuevaFila, nuevaColumna] != 1))
+
         {
             Posicion[0] = nuevaFila;
             Posicion[1] = nuevaColumna;
             Console.WriteLine($"{Nombre} se ha movido a ({Posicion[0]}, {Posicion[1]})");
             VerificarTrampas(laberinto, nuevaFila, nuevaColumna);
             VerificarVictoria(PosicionVictoria);
+            AtravesarPared = false;
         }
         else
         {
@@ -72,16 +72,16 @@ public class Jugador
         int celda = laberinto.ObtenerMapa()[fila, columna];
         switch (celda)
         {
-            case 2: // Pinchos
+            case 2: // bombas
                 if (EscudoActivo)
                 {
-                    Console.WriteLine($"{Nombre} ha pisado una trampa de pinchos, pero el escudo lo protege. No pierde vida.");
+                    Console.WriteLine($"{Nombre} ha pisado una trampa de bombas, pero el escudo lo protege. No pierde vida.");
                     EscudoActivo = false;
                 }
                 else
                 {
                     Vida--;
-                    Console.WriteLine($"{Nombre} ha pisado una trampa de pinchos y perdió 1 vida. Vida actual: {Vida}");
+                    Console.WriteLine($"{Nombre} ha pisado una trampa de bombas y perdió 1 vida. Vida actual: {Vida}");
                 }
                 laberinto.ReemplazarTrampa(fila, columna, 2);
                 break;
@@ -123,6 +123,18 @@ public class Jugador
         {
             ActivarDobleMovimiento();
         }
+        if (Habilidad == "AtravesarPared")
+        {
+            ActivarAtravesarPared();
+        }
+        if (Habilidad == "Curación")
+        {
+            ActivarCuración();
+        }
+        if (Habilidad == "Teletransportación")
+        {
+            ActivarTeletransportación(laberinto);
+        }
         Enfriamiento = 3; // Establecer enfriamiento
     }
 
@@ -138,6 +150,26 @@ public class Jugador
         TurnosDobleMovimiento = 2;
     }
 
+    private void ActivarAtravesarPared()
+    {
+        Console.WriteLine($"{Nombre} usa la habilidad Atravsar Pared y podrá moverse a través de paredes durante un turno.");
+        AtravesarPared = true;
+    }
+    
+    private void ActivarCuración()
+    {
+        Console.WriteLine($"{Nombre} usa la habilidad Curación y recupera 2 de vida.");
+        Vida += 2;
+    }
+
+    private void ActivarTeletransportación(Laberinto laberinto)
+    {
+        ver mapa = laberinto.ObtenerMapa();
+        int filas = mapa.GetLength(0);
+        int columnas = mapa.GetLength(1);
+
+        Random rnd = new Random();
+    }
     public void ReducirEnfriamiento()
     {
         if (Enfriamiento > 0)
