@@ -164,11 +164,22 @@ public class Jugador
 
     private void ActivarTeletransportación(Laberinto laberinto)
     {
-        ver mapa = laberinto.ObtenerMapa();
+        var mapa = laberinto.ObtenerMapa();
         int filas = mapa.GetLength(0);
         int columnas = mapa.GetLength(1);
 
         Random rnd = new Random();
+        int x, y;
+        do
+         {
+            x = rnd.Next(filas -3);
+            y = rnd.Next(columnas -3);
+        } while(mapa[x,y] != 0);
+
+        Posicion[0] = x;
+        Posicion[1] = y;
+        Console.WriteLine($"{Nombre} usa la habilidad de Teletransportación y se teletransporta a la posición ({x}, {y}).");
+
     }
     public void ReducirEnfriamiento()
     {
