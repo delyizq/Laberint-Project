@@ -14,7 +14,7 @@ public class Jugador
     public Jugador(string nombre)
     {
         Nombre = nombre;
-        Habilidades = new List<string> { "EscudoProtector", "DobleMovimiento", "", "Habilidad4", "Habilidad5" };
+        Habilidades = new List<string> { "EscudoProtector", "DobleMovimiento", "AtravesarPared", "Curación", "Teletransportación" };
         Enfriamiento = 3; // Enfriamiento reducido a 1 turno
         TurnosDobleMovimiento = 0;
         EscudoActivo = false;
@@ -25,7 +25,7 @@ public class Jugador
         if (indice >= 0 && indice < Habilidades.Count)
         {
             Habilidad = Habilidades[indice];
-            Console.WriteLine($"{Nombre} ha seleccionado {Habilidad}");
+            Console.WriteLine($"{Nombre} ha seleccionado {Habilidad}. Presione la tecla B para activar habilidad.");
         }
         else
         {
