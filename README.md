@@ -1,5 +1,4 @@
 # Crazy Maze
-Mi primer proyecto de programación.
 
 ## Descripción:
 Es un juego de laberinto para dos jugadores donde cada uno debe moverse estratégicamente a través de un mapa generado de forma aleatoria, esquivando trampas y utilizando una habilidad especial para alcanzar la victoria. El primer jugador en llegar a la casilla inicial de su oponente será el vencedor.
@@ -25,7 +24,7 @@ Es un juego de laberinto para dos jugadores donde cada uno debe moverse estraté
 - 🍎Manzana (incrementa la vida).
 - ⭐Estrella mágica (te teletransporta a una casilla random del laberinto).
 - 😃 Jugador1.
-- 😠 Jugadoe2.
+- 😠 Jugador2.
 
 ## Habilidades de los jugadores:
 Para que inicie la partida cada jugador debe seleccionar una habilidad de las siguientes:
