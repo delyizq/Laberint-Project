@@ -14,6 +14,7 @@ Es un juego de laberinto para dos jugadores donde cada uno debe moverse estraté
 3. Para comenzar la partida cada jugador debe seleccionar una habilidad.
 4. Los jugadores se moverán por turnos presionando las siguientes teclas:
  Jugador 1: W (arriba), A (izquierda), S (abajo), D (derecha)
+ 
  Jugador 2: ↑ (arriba), ← (izquierda), ↓ (abajo), → (derecha)
 5. Se deben evitar las trampas como bombas y estrellas mágicas, y aprovechar las manzanas saludables.
 6. El ganador será el primero en llegar a la casilla de inicio de su oponente.
@@ -41,6 +42,10 @@ Para activar tu habilidad deberás presionar la tecla B.
 - Las habilidades poseen un tiempo de enfriamiento para usarse.
 - Si un jugador pierde toda su vida, su oponente ganará automáticamente.
 
+## Ejecución del juego:
+Para ejecutar el juego, compila el juego en C# y ejecútalo utilizando el siguiente comando: dotnet run
+
+Disfruta del juego y que gane el mejor!!!
 
 
 
