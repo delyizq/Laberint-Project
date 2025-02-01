@@ -13,11 +13,10 @@ Es un juego de laberinto para dos jugadores donde cada uno debe moverse estraté
 2. Se muestra el laberinto con los jugadores y las trampas.
 3. Para comenzar la partida cada jugador debe seleccionar una habilidad.
 4. Los jugadores se moverán por turnos presionando las siguientes teclas:
- Jugador 1: W (arriba), A (izquierda), S (abajo), D (derecha)
- 
- Jugador 2: ↑ (arriba), ← (izquierda), ↓ (abajo), → (derecha)
-5. Se deben evitar las trampas como bombas y estrellas mágicas, y aprovechar las manzanas saludables.
-6. El ganador será el primero en llegar a la casilla de inicio de su oponente.
+Jugador 1: W (arriba), A (izquierda), S (abajo), D (derecha)
+Jugador 2: ↑ (arriba), ← (izquierda), ↓ (abajo), → (derecha)
+6. Se deben evitar las trampas como bombas y estrellas mágicas, y aprovechar las manzanas saludables.
+7. El ganador será el primero en llegar a la casilla de inicio de su oponente.
 
 ## Elementos del mapa:
 - ⬛Pared (no se puede atravesar).
